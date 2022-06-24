@@ -1,0 +1,64 @@
+/*
+INSTRUCTIONS
+1. Make a copy of this codepen (you may have to create a free codepen account to do so)
+2. Using CSS properties alone, make the HTML button match as closely as possible, the image provided. 
+3. Do not add or modify the HTML in any way
+4. Don't worry if it's not 100% perfect, get as close as you can
+3. Provide a link to your codepen
+*/
+
+<style>
+button {
+  margin: 20px 28px;
+  width: 245px; height:57px;  
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  letter-spacing: -1px;
+  font-weight:700;
+  color: #555555;
+  text-transform:     uppercase;
+  background: linear-gradient(to bottom, #e3e3e3 0%, #d2d2d2 45%, #c6c6c6 53%, #adadad 100%);
+  border-radius:10px;
+  text-shadow: 0px 1px #f3f3f3;  
+  border:none;  
+  box-shadow: 0 1px 3px 2px #777777; 
+  display: inline-block;
+  position: relative;  
+}
+
+button:before{
+  width: 260px;
+  height: 71px;
+  position: absolute;
+  top: -9px;
+  left: -10px; 
+  background-color: #cbcbcb;
+  content: "";
+  border:2px solid #fff; 
+  border-radius: 15px;  
+  box-shadow: 0 0 0 2px #666,
+    0 2px 9px #ccc;
+  z-index: -1;    
+} 
+
+button:after {    
+  content:"★                     ★";
+  white-space: pre;
+  font-size:1.8rem;
+  color: #888888; 
+  position: absolute;
+  left: 25px;
+  top: 9px;
+  }
+</style>
+
+<!-- do not change the markup -->
+<img src="https://teamallegiance.com/wp-content/uploads/2021/04/css-button.png"/>
+
+<hr/>
+
+<button>
+  Checkout
+</button>
+
+
